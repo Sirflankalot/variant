@@ -29,11 +29,9 @@ namespace SirVariant {
 	//
 	// size_t tag_val() // Get current value of internal tag
 	//
-	// structure to get correct tag value for each type
+	// function to get correct tag value for each type
 	// template<class T>
-	// struct tag_of {
-	//     constexpr static size_t value;
-	// };
+	// constexpr static size_t tag_of();
 
 	template <class T1, class... T>
 	class Heap_Variant;
