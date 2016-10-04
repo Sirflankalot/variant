@@ -11,7 +11,7 @@ BraceWrapping:
 AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: false
-AlignConsecutiveAssignments: true
+AlignConsecutiveAssignments: false
 AlignOperands: true
 AlignTrailingComments: true
 AlwaysBreakAfterDefinitionReturnType: None

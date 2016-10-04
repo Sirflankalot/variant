@@ -7,7 +7,7 @@ FULLWARN  := -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion
 STD       := -std=c++14 
 OPTIMIZE  := -O3 
 DEBUG     := 
-INCLUDES  := -Isrc/ -Igoogletest/googletest/include
+INCLUDES  := -Isrc/ -Iinclude/ -Igoogletest/googletest/include
 LINK      := googletest/googletest/make/gtest_main.a -lpthread
 
 MODULES   := 
@@ -51,7 +51,7 @@ warn: WARNINGS = $(FULLWARN)
 warn: checkdirs $(PROGNAME)
 
 sanitize: OPTIMIZE = -O0
-sanitize: DEBUG = -g -fsanitize=address
+sanitize: DEBUG = -g -fsanitize=address -fsanitize=undefined
 sanitize: checkdirs $(PROGNAME)
 
 asm: DEBUG = -S -masm=intel
