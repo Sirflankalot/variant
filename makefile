@@ -22,7 +22,7 @@ ALLFILES  = $(foreach sdir,$(SRC_DIR),$(wildcard $(sdir)/*.cpp))
 ALLFILES += $(foreach sdir,$(SRC_DIR),$(wildcard $(sdir)/*.hpp))
 ALLFILES += $(foreach sdir,$(SRC_DIR),$(wildcard $(sdir)/*.tpp))
 
-PROGNAME := cas
+PROGNAME := variant
 
 .PHONY: all checkdirs clean
 

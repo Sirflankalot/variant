@@ -124,7 +124,7 @@ namespace SirVariant {
 			return const_cast<const T&>(get_assist<T>());
 		}
 
-		tag_type tag_val() {
+		tag_type tag_val() const {
 			return tag;
 		}
 
